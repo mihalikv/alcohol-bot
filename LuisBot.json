@@ -1,0 +1,291 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "LuisBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "AlcoholList"
+    },
+    {
+      "name": "CalculateAlcohol"
+    },
+    {
+      "name": "Completed"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Alcohol"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "number",
+    "percentage"
+  ],
+  "model_features": [
+    {
+      "name": "Near",
+      "mode": true,
+      "words": "near,around,close,nearby",
+      "activated": true
+    },
+    {
+      "name": "Show",
+      "mode": true,
+      "words": "show,find,look,search",
+      "activated": true
+    }
+  ],
+  "regex_features": [
+    {
+      "name": "AirportCodeRegex",
+      "pattern": "[a-z]{3}",
+      "activated": true
+    }
+  ],
+  "utterances": [
+    {
+      "text": "yes",
+      "intent": "Completed",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can i do?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "all",
+      "intent": "Completed",
+      "entities": []
+    },
+    {
+      "text": "i have rum",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 7,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "what are the available options?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "that’s all",
+      "intent": "Completed",
+      "entities": []
+    },
+    {
+      "text": "i need to know how drunk i am ?",
+      "intent": "CalculateAlcohol",
+      "entities": []
+    },
+    {
+      "text": "how drunk am i?",
+      "intent": "CalculateAlcohol",
+      "entities": []
+    },
+    {
+      "text": "i want to know how drunk i am?",
+      "intent": "CalculateAlcohol",
+      "entities": []
+    },
+    {
+      "text": "what is the current level of alcohol in my blood?",
+      "intent": "CalculateAlcohol",
+      "entities": []
+    },
+    {
+      "text": "i had 5 shots of vodka, 3 shots of borovicka and 10 shots of rum",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 17,
+          "endPos": 21
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 35,
+          "endPos": 43
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 61,
+          "endPos": 63
+        }
+      ]
+    },
+    {
+      "text": "i had 5 vodka's",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "i have 10 rum's",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 10,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "i have 9 rum",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "i have 5 shots of vodka",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i had one pint of beer",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "i had 10 glasses of wine",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "that’s everything",
+      "intent": "Completed",
+      "entities": []
+    },
+    {
+      "text": "i had one vodka",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "i had 10 shots of captain morgan",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 18,
+          "endPos": 24
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "i had one more beer",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i had 2 vodka and one beer",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 22,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i had one beer, 2 vodka and three borovicka's",
+      "intent": "AlcoholList",
+      "entities": [
+        {
+          "entity": "Alcohol",
+          "startPos": 10,
+          "endPos": 13
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Alcohol",
+          "startPos": 34,
+          "endPos": 42
+        }
+      ]
+    }
+  ]
+}
